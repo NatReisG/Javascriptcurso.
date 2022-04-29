@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 9 de cria DOM</title>
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="ouo">iniciiando os estudos</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae odio tempore accusantium sint iusto eveniet, debitis fugit, quo ut adipisci ipsum earum. Incidunt repellat distinctio temporibus modi eaque, animi laudantium?</p>
+    <p id="me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nobis quos laudantium quae atque molestias eveniet reprehenderit reiciendis ducimus similique quam animi qui amet nesciunt illo, omnis totam voluptatum eligendi.</p>
+    <div name="em">Clique aqui para ver se due certo.</div>
+    <section class="sec">
+        uhuuuuuuuu
+    </section>
+    <script>
+        window.document.write('Olá, mundo\n')
+        window.document.write(window.document.characterSet)
+        window.document.write('\n')
+        window.document.write(window.navigator.appName)
+        window.document.write('\n')
+        window.document.write(window.document.URL)
+        /*
+        var corpo = document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('O primeiro parágrafo está escrito assim: ' + p1.innerText)
+        window.document.write('\n')
+        p1.style.color = 'blue'
+        corpo.style.background = 'yellow'
+        window.document.write(p1.innerHTML)
+        var t1 = document.getElementsByTagName('h1')[0]
+        window.alert(t1.innerHTML)
+        var me = document.getElementById('me')
+        me.style.background = 'white'
+        document.write(me.innerHTML)
+        me.innerText = 'Mudei uhul'
+        */
+
+        /*
+        var brr = document.getElementsByName('em')[0]
+        window.alert(brr.innerText)
+        window.alert(brr)
+        window.alert('brr')
+
+        brr.innerText = 'Trnasformei'
+        window.alert(brr.innerText)
+        */
+
+        var divo = window.document.querySelector('h1#ouo') /* id */
+        divo.style.background = 'blue'
+        var diva = window.document.querySelector('section.sec')
+        diva.innerText = 'amigo estou aqui'
+    </script>
+</body>
+</html>
